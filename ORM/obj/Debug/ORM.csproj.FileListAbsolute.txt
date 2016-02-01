@@ -1,0 +1,12 @@
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ORM.dll.config
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ORM.dll
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ORM.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\EntityFramework.dll
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\EntityFramework.SqlServer.dll
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\EntityFramework.xml
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\EntityFramework.SqlServer.xml
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\obj\Debug\ORM.csprojResolveAssemblyReference.cache
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\obj\Debug\ORM.dll
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\obj\Debug\ORM.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ru\EntityFramework.resources.dll
+G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

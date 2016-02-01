@@ -1,0 +1,263 @@
+﻿body {
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
+}
+
+DIV.main {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px #CCCCCC solid;
+    border-radius: 10px;
+}
+
+.block {
+    height: 30px;
+    background-color: #008B8B;
+}
+
+table {
+    margin-right: 70px;
+}
+
+
+table a, .adminedit {
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+table a:hover, div.file:hover, .adminedit {
+    color: #000080;
+}
+
+header DIV.title, nav ul li, h4, .fileload, div.file a, .adminedit, div.pager a {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+
+h2 {
+    font: bold 0.8em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+
+
+.adminedit {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+
+
+header {
+    background-size: cover;
+    background-color: #66CDAA;
+    color: white;
+    height: 220px;
+}
+
+header DIV.title {
+    position: relative;
+    left: 5%;
+    font-size: 5em;
+    padding: .9em;
+    font-family: Geneva, Georgia, Arial, cursive;
+    /*margin-left: 70px;*/
+    vertical-align: central;
+}
+
+footer {
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+}
+
+nav {
+    background-color: #E6E6FA;
+    align-content: center;
+}
+
+.nav-tabs li a {
+    margin-left: 35%;
+    font-size: 20px;
+    color: #3278b3;
+    width: 300px;
+    text-align: center;
+}
+
+.nav-tabs:active {
+    background-color: #2d6ca2;
+}
+
+.nav-tabs:hover {
+    background-color: #66CDAA;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-success{
+    align-items: center;
+    width: 150px;
+}
+
+h4, input {
+    text-align: center;
+    padding: 4px;
+}
+
+.fileload {
+    position: relative;
+    margin-left: 30%;
+}
+
+#submit {
+    margin-top: -50px;
+    position: relative;
+    margin-left: 20%;
+}
+
+DIV.file {
+    border: 2px #008b8b solid;
+    border-radius: 5px;
+    background-color: #cccccc;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+    padding: 7px;
+    width: 60%;
+}
+
+    DIV.file a {
+        font-size: 1.2em;
+        margin-left: 5px;
+        color: darkslategrey;
+    }
+
+    .delete, .edit {
+        float: right;
+        margin-right: 10px;
+        margin-top: -5px;
+    }
+
+.visible {
+    border: 2px #008b8b solid;
+    border-radius: 5px;
+    background-color: #E0EEE0;
+    color: black;
+    height:170px;
+    width:400px;    
+    padding:5px;
+    position: relative; 
+    left:50%;
+    margin-left:-170px;
+    display: none;
+}
+
+
+.search {
+    margin-left: 32%;
+}
+#file, #user {
+    width: 70%;
+}
+
+#file {
+    text-align: left;
+}
+
+#users {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#users TD, #users TH {
+    padding: 3px; 
+    border: 1px solid black; 
+}
+
+#users a {
+    color: darkslateblue;
+}
+
+DIV.pager {
+    text-align: center;
+    padding: .5em 0 0 0;
+    margin-top: -1em;
+}
+
+    DIV.pager A {
+        font-size: 1.1em;
+        color: #666;
+        text-decoration: none;
+        padding: 0 .4em 0 .4em;
+    }
+
+        DIV.pager A:hover {
+            background-color: #ACB78E;
+        }
+
+        DIV.pager A.selected {
+            background-color: #353535;
+            color: White;
+        }
+
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+
+    margin: auto;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

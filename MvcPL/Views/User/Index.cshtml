@@ -1,0 +1,49 @@
+﻿@model IEnumerable<MvcPL.ViewModels.UserViewModel>
+
+@{
+    ViewBag.Title = "Все пользователи";
+}
+
+@section content {
+    <h2>Все пользователи</h2>
+    <table id="users">
+        <tr>
+            <th>
+                <h4>@Html.DisplayNameFor(model => model.Login)</h4>
+            </th>
+            <th>
+                <h4>@Html.DisplayNameFor(model => model.RoleNames)</h4>
+            </th>
+            <th>
+                <h4>Редактирование</h4>
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Login)
+                </td>
+                <td>
+                    @foreach (var role in item.RoleNames)
+                    {
+                        <text>@Html.DisplayTextFor(modelItem => role)</text>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Редактировать", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Удалить", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+
+    <p>
+        @Html.ActionLink("Создать нового пользователя", "Register", "Account", null, new { @class = "adminedit" })
+    </p>
+
+    <p>
+        @Html.ActionLink("Создать новую роль", "AddRole", "Admin", null, new { @class = "adminedit" })
+    </p>
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MvcPL.ViewModels.FileViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="file">
+        @Html.ActionLink(item.Name, "GetFile", "Files", new {id = item.UrlLink}, null)
+
+        @if (@HttpContext.Current.User.IsInRole("Администратор") ||
+             (@ViewBag.Action != "Home" && @HttpContext.Current.User.Identity.IsAuthenticated))
+        {
+            <a class="delete" href=@Url.Action("Delete", "Files", new {id = item.Id}, null)>
+                <img src="/Content/button_cancel_8099.png" alt="Удалить"/>
+            </a>
+
+            <img src="/Content/edit.png" alt="Редактировать" class="edit" id="@item.Id"/>
+
+            @Html.Partial("_EditFile", item)
+        }
+    </div>
+}

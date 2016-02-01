@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MvcPL.ViewModels.FileViewModel>
+
+@{
+    ViewBag.Title = "Главная";
+}
+
+@section content {
+    @Html.Partial("_FilePartial", Model)
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/myscripts")
+}
+
+
+

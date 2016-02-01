@@ -1,0 +1,5 @@
+G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\bin\Debug\BLL.Interface.dll
+G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\bin\Debug\BLL.Interface.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\obj\Debug\BLL.Interface.dll
+G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\obj\Debug\BLL.Interface.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\obj\Debug\BLL.Interface.csprojResolveAssemblyReference.cache

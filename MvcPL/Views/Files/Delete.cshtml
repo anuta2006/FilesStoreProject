@@ -1,0 +1,21 @@
+﻿@model MvcPL.ViewModels.FileViewModel
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+@section content {
+    <h2>Удаление файла</h2>
+    <div>Вы уверены, что хотите удалить файл <b>@Html.DisplayFor(model => model.Name)</b>?</div>
+    <br />
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <p>
+            @Html.SubmitButton("Удалить")
+        </p>
+    }
+}
+
+

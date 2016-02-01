@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MvcPL.ViewModels.FileViewModel>
+           
+<div id="searchresults">
+
+    <table class="search">
+        <tr>
+            <td id="file"><h4>Файл</h4></td>
+            <td><h4>Владелец</h4></td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td id="file">@item.Name</td>
+                <td id="user">@item.UserName</td>
+            </tr>
+        }
+    </table>
+
+
+</div>
+
+
+
+
+

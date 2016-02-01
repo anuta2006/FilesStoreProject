@@ -1,0 +1,24 @@
+﻿@model MvcPL.ViewModels.RoleViewModel
+
+@{
+    ViewBag.Title = "Создание роли";
+}
+
+@section content {
+    @using (Html.BeginForm("AddRole", "Admin", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name)
+        @Html.SubmitButton("Создать")
+    }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+

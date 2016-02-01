@@ -1,0 +1,25 @@
+﻿@model MvcPL.ViewModels.ErrorViewModel
+
+@{
+    ViewBag.Title = "Ошибка";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ошибка</title>
+</head>
+<body>
+    <div align="center">
+        <h3>При обработке запроса произошла ошибка</h3>
+        @if (Model != null)
+        {
+            <h3>"@Model.Message"</h3>
+        }
+        <img src="/Content/error.jpg" alt="Ошибка" />
+    </div>
+</body>
+</html>

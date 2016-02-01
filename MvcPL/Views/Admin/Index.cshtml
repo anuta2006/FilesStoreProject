@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Управление";
+}
+
+@section content {
+    <p>@Html.ActionLink("Управление пользователями", "Index", "User", null, new { @class = "adminedit" })</p>
+
+    <div id="loadingIndicator" style="display: none;">Идет загрузка файла...</div>
+
+    <div>
+        @using (Ajax.BeginForm("Search", "Files", new AjaxOptions { UpdateTargetId = "results", LoadingElementId = "loadingIndicator" }))
+        {
+            @Html.TextBox("name")
+            @Html.SubmitButton("Поиск")
+        }
+        <div id="results"></div>
+    </div>
+
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/myscripts")
+}
+
+
+
+
+
+
+
+
+
+

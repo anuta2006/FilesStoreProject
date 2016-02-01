@@ -1,0 +1,29 @@
+﻿@using System.Web.Mvc.Ajax
+@model IEnumerable<MvcPL.ViewModels.FileViewModel>
+
+@{
+    ViewBag.Title = "Мои файлы";
+}
+
+@section content {
+    <div id="loadingIndicator" style="display: none;">Идет загрузка файла...</div>
+
+    @using (Ajax.BeginForm("Upload",
+        new { },
+        new AjaxOptions() { LoadingElementId = "loadingIndicator", HttpMethod = "POST", InsertionMode = InsertionMode.InsertAfter },
+        new { enctype = "multipart/form-data", id = "form" }
+        ))
+    {
+        <input type="file" name="upload" id="uploadFile" class="fileload" />
+        <button id="submit" class="btn btn-success">Загрузить</button>
+    }
+
+    <div id="files">
+        @Html.Partial("_FilePartial", Model)
+    </div>
+}
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/myscripts")
+}

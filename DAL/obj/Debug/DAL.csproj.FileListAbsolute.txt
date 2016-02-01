@@ -1,0 +1,16 @@
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.dll.config
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.Interface.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\EntityFramework.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\ORM.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.Interface.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\ORM.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\EntityFramework.xml
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\ru\EntityFramework.resources.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\obj\Debug\DAL.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL\obj\Debug\DAL.pdb

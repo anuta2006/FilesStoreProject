@@ -1,0 +1,27 @@
+﻿@model MvcPL.ViewModels.FileViewModel
+
+@using (Html.BeginForm("EditFile", "Files", FormMethod.Post, new { @class = "visible", @id = @Model.Id }))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        @Html.HiddenFor(m => Model.Id)
+        <p>
+            @Html.LabelFor(m => Model.Name)
+            @Html.EditorFor(m => Model.Name, new { style = "width:500px;" })
+        </p>
+        <p>
+            @Html.LabelFor(m => Model.UrlLink)
+            @Html.Raw("http://localhost:53604/Files/GetFile/" + @Model.UrlLink)
+        </p>
+
+        <p>
+            @Html.LabelFor(m => Model.IsShared)
+            @Html.DropDownList("access", new SelectList(new string[] { "Общий", "Ограниченный" }))
+        </p>
+
+        <p>
+            @Html.SubmitButton("Изменить")
+        </p>
+    </fieldset>
+}
+

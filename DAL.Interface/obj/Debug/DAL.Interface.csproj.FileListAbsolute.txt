@@ -1,0 +1,5 @@
+G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\bin\Debug\DAL.Interface.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\bin\Debug\DAL.Interface.pdb
+G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache
+G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\obj\Debug\DAL.Interface.dll
+G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\obj\Debug\DAL.Interface.pdb

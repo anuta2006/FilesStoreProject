@@ -1,0 +1,34 @@
+﻿@model MvcPL.ViewModels.UserViewModel
+
+@{
+    ViewBag.Title = "Редактировать пользователя";
+}
+
+@section content {
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <fieldset>
+            <legend>Пользователь</legend>
+
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="editor-label"><b>Логин</b></div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Login)
+            </div>
+
+            <div class="editor-label"><b>Роли</b></div>
+
+            @foreach (var role in ViewBag.Roles)
+            {
+                <input type="checkbox" name="selectedRoles" value="@role.Id"
+                       @(Model.RoleNames.Contains(role.Name) ? "checked=\"checked\"" : "") />@role.Name<br />
+            }
+            <p>
+                <input type="submit" value="Сохранить" class="btn btn-success" />
+            </p>
+        </fieldset>
+    }
+}
+

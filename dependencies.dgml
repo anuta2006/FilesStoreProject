@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\BLL.Interface.csproj" Category="CSProject" Bounds="54.8811297353109,70.9366442321777,142.443333333333,85.9602000000001" Group="Expanded" Label="BLL.Interface" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\bin\Debug\BLL.Interface.dll" Bounds="74.8811297353109,110.936744232178,102.443333333333,25.96" Label="BLL.Interface.dll" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\BLL\BLL.csproj" Category="CSProject" Bounds="262.523617550652,72.257198491835,93.66,85.9602" Group="Expanded" Label="BLL" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\BLL\bin\Debug\BLL.dll" Bounds="282.523613481641,112.257300176405,53.66,25.96" Label="BLL.dll" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\DAL.Interface.csproj" Category="CSProject" Bounds="242.611086222331,201.831980383301,145.773333333333,85.9602000000001" Group="Expanded" Label="DAL.Interface" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\bin\Debug\DAL.Interface.dll" Bounds="262.611086222331,241.832080383301,105.773333333333,25.96" Label="DAL.Interface.dll" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\DAL\DAL.csproj" Category="CSProject" Bounds="420.299197994988,202.215338345865,96.9900000000001,85.9600000000002" Group="Expanded" Label="DAL" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.dll" Bounds="440.299197994988,242.215592618326,56.99,25.96" Label="DAL.dll" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\MvcPL\MvcPL.csproj" Category="CSProject" Bounds="68.4385482816768,-68.1641787127257,109.916666666667,85.9602" Group="Expanded" Label="MvcPL" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\MvcPL\bin\MvcPL.dll" Bounds="88.4385462217403,-28.1640787127257,69.9166666666667,25.96" Label="MvcPL.dll" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\ORM\ORM.csproj" Category="CSProject" Bounds="423.530238095238,341.691528822055,102.48,85.96" Group="Expanded" Label="ORM" UseManualLocation="True" />
+    <Node Id="G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ORM.dll" Bounds="443.530238095238,381.691474549594,62.48,25.96" Label="ORM.dll" />
+  </Nodes>
+  <Links>
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\BLL.Interface.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\bin\Debug\BLL.Interface.dll" Category="Contains" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\BLL\BLL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\BLL.Interface.csproj" Bounds="206.324229391497,114.49484125999,56.1993881591544,0.404987770087487" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\BLL\BLL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\BLL\bin\Debug\BLL.dll" Category="Contains" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\BLL\BLL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\DAL.Interface.csproj" Bounds="311.391634110671,158.217398491835,1.64182207535828,34.6246828241943" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\DAL.Interface.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\bin\Debug\DAL.Interface.dll" Category="Contains" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\DAL\DAL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\DAL.Interface\DAL.Interface.csproj" Bounds="397.384391428323,245.016805980337,22.9148065666648,0.0572895351305647" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\DAL\DAL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\DAL\bin\Debug\DAL.dll" Category="Contains" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\DAL\DAL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\ORM\ORM.csproj" Bounds="470.635732400479,288.175338345865,1.90770797117165,44.5244402474679" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\MvcPL\MvcPL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\BLL.Interface\BLL.Interface.csproj" Bounds="124.23296932228,17.7960212872743,0.858696363659078,44.1423253311833" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\MvcPL\MvcPL.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\MvcPL\bin\MvcPL.dll" Category="Contains" />
+    <Link Source="G:\EPAM\ASP.NET.2.Klimchuk\ORM\ORM.csproj" Target="G:\EPAM\ASP.NET.2.Klimchuk\ORM\bin\Debug\ORM.dll" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CSProject" Background="#FF3A8F35" />
+    <Category Id="Contains" Label="Содержит" Description="Указывает, содержит ли источник связи целевой объект" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Содержится в" IsContainment="True" OutgoingActionLabel="Содержит" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Фон" Description="Цвет фона" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="Группа" Description="Отображать узел как группу" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

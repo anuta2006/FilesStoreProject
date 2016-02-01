@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jqueryval")
+</head>
+<body>
+
+    <div class="main">
+        <div class="block">
+            <table class="block" align="right">
+                <tr>
+                    @if (@HttpContext.Current.User.Identity.IsAuthenticated)
+                    {
+                        <td>@Html.ActionLink("Выйти", "Logout", "Account")</td>
+                    }
+                    else
+                    {
+                        <td>@Html.ActionLink("Войти", "Login", "Account")</td>
+                    }
+                    <td>
+                        @Html.ActionLink("Регистрация", "Register", "Account")
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <header>
+            <div class="title">Файловое хранилище</div>
+        </header>
+
+        <nav>
+            <ul class="nav nav-tabs">
+                <li>@Html.ActionLink("Общие файлы", "Index", "Home")</li>
+
+                @if (@HttpContext.Current.User.IsInRole("Администратор"))
+                {
+                    <li>@Html.ActionLink("Пользовательские файлы", "GetUsersFiles", "Files")</li>
+                    <li>@Html.ActionLink("Управление", "Index", "Admin")</li>
+                }
+                else if (@HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    <li>@Html.ActionLink("Мои файлы", "Index", "Files")</li>
+                }
+            </ul>
+        </nav>
+
+        <div>
+            @if (@HttpContext.Current.User.IsInRole("Администратор"))
+            {
+                <h4>Вы вошли как администратор!</h4>
+            }
+            else if (@HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                <h4>Добро пожаловать, @HttpContext.Current.User.Identity.Name!</h4>
+                <h4>Теперь Вы можете управлять своими файлами</h4>
+            }
+            else
+            {
+                <h4>Чтобы получить возможность управления файлами, Вам необходимо войти в систему!</h4>
+            }
+        </div>
+
+        <main align="center">
+
+            @RenderSection(name: "content", required: false)
+
+        </main>
+
+        <footer>
+            <p>@@Files store 2015 </p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
